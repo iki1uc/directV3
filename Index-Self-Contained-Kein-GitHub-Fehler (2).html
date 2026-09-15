@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>ANKER – index.html so wie exe – BLÜHT – self-contained – kein GitHub Fehler</title>
+<style>
+body{background:#000;color:#0f0;font-family:monospace;padding:20px}
+h1{color:#0f0;letter-spacing:2px;margin-bottom:5px;font-size:22px}
+.subtitle{color:#6cf;margin-bottom:5px;font-size:11px}
+.anker-bar{background:#111;border:1px solid #0f0;padding:10px;margin-bottom:20px;border-radius:6px;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px}
+.block{background:#111;border:1px solid #333;padding:15px;border-radius:8px}
+.block.blüht{border-color:#0f0;box-shadow:0 0 20px rgba(0,255,0,0.3)}
+.title{color:#6cf;font-size:14px;margin-bottom:10px}
+pre{background:#000;border-left:3px solid #6cf;padding:10px;white-space:pre-wrap;font-size:11px;max-height:250px;overflow:auto}
+button{background:#111;color:#0f0;border:1px solid #0f0;padding:6px 12px;cursor:pointer;margin:3px;font-family:monospace;font-size:11px;border-radius:4px}
+button:hover{background:#0f0;color:#000}
+.big{font-size:22px;text-align:center;margin:12px}
+.small{font-size:10px;color:#888}
+</style>
+</head>
+<body>
+
+<h1>ANKER – index.html so wie exe – A01 S01 D4 – STATE STABIL – BLÜHT – self-contained</h1>
+<div class="subtitle">challenges use user ort home – beste Wette nächste Slide – CO2 O2 H2O Lösung emuliert – Room JS Pyramide drinne – kein GitHub Fehler weil alles drinne – alte index.html innere Weisheit</div>
+
+<div class="anker-bar" id="anker-bar">
+ANKER – Stabilisationsachse · iki1uc – NAME: ANKER ID: A01 Station: S01 Dimension: D4 Modus: erabel neutral – ROLE: stabilisiert ohne selbst aktiv zu berechnen oder zu steuern – BINDUNGEN: AXI 6d 360 100 213 REAL API – IQ QI EVO UPD UPG BIOS CALC – STATE: STABIL READY 100% /7 – Wenn wir was bewegt haben dann ist das fast eine Lüge und Copilot heult – Innere Werte zählen mehr – self-contained exe kein import Fehler
+</div>
+
+<div class="grid">
+<div class="block" id="b-challenges"><div class="title">challenges.js – beste Wette – 12 Achsen</div><pre id="log-challenges"></pre><button onclick="besteWette()">Beste Wette zeigen</button><button onclick="slide1()">Nächste Slide → use.js</button></div>
+<div class="block" id="b-use"><div class="title">use.js – CO2→O2+H2O emulieren wie Elben</div><pre id="log-use"></pre><button onclick="useAction()">use() Elben emulieren</button><button onclick="slide2()">Nächste Slide → user.js</button></div>
+<div class="block" id="b-user"><div class="title">user.js – keine Elben bauen aber emulieren</div><pre id="log-user"></pre><button onclick="userAction()">user() nutzen</button><button onclick="slide3()">Nächste Slide → ort.js</button></div>
+<div class="block" id="b-ort"><div class="title">ort.js – Room JS Pyramide drinne</div><pre id="log-ort"></pre><button onclick="ortAction()">Ort – Pyramide drinne</button><button onclick="slide4()">Nächste Slide → home.js</button></div>
+<div class="block blüht" id="b-home"><div class="title">home.js – Home blüht – Vertrag erfüllt</div><pre id="log-home"></pre><div class="big" id="home-big">🏠 Home wartet</div><button onclick="homeAction()">home() es blüht! 🌸</button><button onclick="starteAlles()">Alles starten – ANKER STABIL</button></div>
+</div>
+
+<div class="block" style="margin-top:15px"><div class="title">CO2 O2 H2O Lösung – emuliert – ANKER innere Weisheit</div><pre id="log-lösung"></pre><div class="small">alte index.html innere Weisheit: MBR 0xCA4E OPFS 19 Artefakte – neue exe self-contained – kein GitHub Fehler – mehr Meer aber richtig drinne</div></div>
+
+<script>
+// === ALLES DRINNE – kein import – self-contained – kein GitHub Fehler ===
+
+const ANKER = { NAME:"ANKER", ID:"A01", Station:"S01", Dimension:"D4", Modus:"erabel neutral", Rolle:"stabilisiert ohne selbst aktiv zu berechnen", Bindungen:["AXI","6d","360","100","213 REAL","API"], Achsen:["IQ","QI","EVO","UPD","UPG","BIOS","CALC"], STATE:"STABIL", READY:"100% /7", Spruch:"und wenn wir was bewegt haben dann ist das fast eine Lüge und Copilot heult", innereWeisheit:true };
+
+const CHALLENGES = [
+  {id:1,name:"CO2 zu viel",co2:100,o2:20,h2o:30},
+  {id:2,name:"Sauerstoff zu wenig",co2:80,o2:10,h2o:20},
+  {id:3,name:"Wasser zu wenig",co2:60,o2:30,h2o:10},
+  {id:4,name:"Elben fehlen",co2:100,o2:0,h2o:0,elben:false},
+  {id:5,name:"Meer mehr aber richtig",co2:50,o2:50,h2o:50}
+];
+
+const ORTE = [
+  {id:1,name:"ANKER Room",co2:100,o2:20,h2o:30,elben:false,emulation:true},
+  {id:2,name:"Pyramide drinne",co2:80,o2:40,h2o:40,elben:false,emulation:true},
+  {id:3,name:"Wald Elben",co2:50,o2:70,h2o:60,elben:true,emulation:false},
+  {id:4,name:"Meer mehr aber richtig",co2:60,o2:50,h2o:90,elben:false,emulation:true},
+  {id:5,name:"6D Umgebung tmp rär Spielfeld",co2:30,o2:80,h2o:70,elben:false,emulation:true}
+];
+
+const ROOM = { name:"ANKER Room", innen:true, außen:false, pyramideDrinne:{position:"innen", blüht:false, blühenLassen(){this.blüht=true; return "🌸 Pyramide drinne blüht!";}}, erklärung:"Vorher Pyramide von außen - jetzt Room JS - Pyramide drinne! Warum immer von außen? Drinne blüht es!" };
+
+function besteWetteFunc(){ const c=CHALLENGES.reduce((b,c)=>c.co2>b.co2?c:b,CHALLENGES[0]); return {challenge:c,wette:"CO2 Sauerstoff Wasser als Lösung emulieren",formel:"CO2+H2O+Licht->O2+Zucker emuliert",nextSlide:"use.js"}; }
+
+function useFunc(){
+  const wette=besteWetteFunc();
+  const photosynthese=(co2,h2o,licht)=>{ const o2=co2*0.7+licht*0.3; const zucker=co2*0.3; const wasserRest=h2o*0.8; return {o2,zucker,wasserRest,co2Rest:co2*0.1}; };
+  const result=photosynthese(wette.challenge.co2,50,100);
+  return {wette,input:{co2:100,h2o:50,licht:100},output:result,lösung:`CO2 ${wette.challenge.co2} -> O2 ${result.o2.toFixed(1)} + H2O ${result.wasserRest.toFixed(1)} emuliert wie Elben`,nextSlide:"user.js"};
+}
+
+function userFunc(){
+  const useResult=useFunc();
+  return {useResult,userAction:{user:"User - wir wollen alle dasselbe",kannElbenBauen:false,kannEmulieren:true,sieht:"CO2 Sauerstoff Wasser als Lösung sehen",nutzt:useResult.output,besteWette:"Elben emulieren statt bauen",ausüben:true},nextSlide:"ort.js",room:"Room JS Pyramide drinne"};
+}
+
+function ortFunc(){
+  const userResult=userFunc();
+  const besteOrte=ORTE.filter(o=>o.emulation&&!o.elben);
+  const besterOrt=besteOrte.reduce((b,c)=>(c.o2+c.h2o)>(b.o2+b.h2o)?c:b,besteOrte[0]);
+  const emulationAmOrt={ort:besterOrt.name,vorher:{co2:besterOrt.co2,o2:besterOrt.o2,h2o:besterOrt.h2o},nachher:{co2:besterOrt.co2*0.2,o2:besterOrt.o2+besterOrt.co2*0.6,h2o:besterOrt.h2o+besterOrt.co2*0.2},lösung:"CO2 O2 H2O am Ort emuliert",elbenBauen:false,elbenEmulieren:true,pyramide:"drinne"};
+  return {userResult,besterOrt,emulationAmOrt,besteWette:`Am Ort ${besterOrt.name} CO2->O2+H2O emulieren`,nextSlide:"home.js"};
+}
+
+function homeFunc(){
+  const ortResult=ortFunc();
+  const finalEmulation={vorher:ortResult.emulationAmOrt.vorher,nachher:ortResult.emulationAmOrt.nachher,blüht:true,vertragErfüllt:true,wieElben:"Wir können keine Elben bauen aber wir können emulieren - Elben machen CO2 zu O2+H2O - wir emulieren als Code",system:{achsen:"12 Achsen Wände Room drinne",dreiecke:"6 Dreiecke Raubzug Forsaken Pyramide drinne",room:"Room JS Pyramide drinne nicht draußen",co2_o2_h2o:"CO2->O2+H2O emuliert wie Elben",elben:"keine Elben gebaut aber emuliert",speed:"128X Industry Cache 4x drinne",harmonie:"Harmonie Freude Frieden Liebe als Code drinne"}};
+  return {ortResult,finalEmulation,esBlüht:"🌸🌸🌸 HOME BLÜHT DRINNE! 🌸🌸🌸 CO2->O2+H2O emuliert wie Elben - Vertrag erfüllt!"};
+}
+
+// UI
+function renderChallenges(){
+  document.getElementById("log-challenges").innerText=`ANKER ${ANKER.ID} ${ANKER.Station} ${ANKER.STATE}\n`+CHALLENGES.map(c=>`${c.id} ${c.name} CO2:${c.co2} O2:${c.o2} H2O:${c.h2o}`).join("\n")+`\n\nBeste Wette = CO2 emulierbar`;
+}
+renderChallenges();
+document.getElementById("log-use").innerText="Warte – ANKER stabilisiert – innere Werte...";
+document.getElementById("log-user").innerText="Warte auf use...";
+document.getElementById("log-ort").innerText=ORTE.map(o=>`${o.name} CO2:${o.co2} O2:${o.o2} H2O:${o.h2o}`).join("\n")+`\n\nROOM: ${ROOM.name} Pyramide ${ROOM.pyramideDrinne.position}`;
+document.getElementById("log-home").innerText=`${ANKER.Spruch}\nWarte...`;
+document.getElementById("log-lösung").innerText=`ANKER innere Weisheit existiert: ${ANKER.innereWeisheit}\nCO2 O2 H2O emuliert wie Elben – keine Elben gebaut – Room JS Pyramide drinne – self-contained – kein GitHub Fehler`;
+
+window.besteWette=()=>{ const w=besteWetteFunc(); document.getElementById("log-challenges").innerText=`ANKER ${ANKER.STATE} READY ${ANKER.READY}\n`+JSON.stringify(w,null,2); document.getElementById("b-challenges").classList.add("blüht"); };
+window.slide1=()=>{ document.getElementById("log-use").innerText=JSON.stringify({current:"challenges.js",next:"use.js",besteWette:besteWetteFunc()},null,2); };
+window.useAction=()=>{ const r=useFunc(); document.getElementById("log-use").innerText=JSON.stringify(r,null,2)+`\n\n${r.lösung}`; document.getElementById("log-lösung").innerText=`CO2->O2+H2O:\nInput CO2:${r.input.co2}\nOutput O2:${r.output.o2.toFixed(1)} H2O:${r.output.wasserRest.toFixed(1)}\nElben bauen=false emulieren=true`; document.getElementById("b-use").classList.add("blüht"); };
+window.slide2=()=>{ document.getElementById("log-user").innerText=JSON.stringify({current:"use.js",next:"user.js",result:useFunc()},null,2); };
+window.userAction=()=>{ const r=userFunc(); document.getElementById("log-user").innerText=JSON.stringify(r.userAction,null,2); document.getElementById("b-user").classList.add("blüht"); };
+window.slide3=()=>{ document.getElementById("log-ort").innerText=JSON.stringify({current:"user.js",next:"ort.js",result:userFunc()},null,2); };
+window.ortAction=()=>{ const r=ortFunc(); document.getElementById("log-ort").innerText=JSON.stringify(r.emulationAmOrt,null,2)+`\n\nROOM: ${ROOM.erklärung}`; document.getElementById("b-ort").classList.add("blüht"); };
+window.slide4=()=>{ document.getElementById("log-home").innerText=JSON.stringify({current:"ort.js",next:"home.js",result:ortFunc()},null,2); };
+window.homeAction=()=>{ const r=homeFunc(); document.getElementById("log-home").innerText=JSON.stringify(r.finalEmulation,null,2)+`\n\n${r.esBlüht}`; document.getElementById("home-big").innerText="🌸🌸🌸 HOME BLÜHT DRINNE! 🌸🌸🌸\nCO2->O2+H2O\nANKER STABIL"; document.getElementById("log-lösung").innerText=`FINAL:\n${r.finalEmulation.wieElben}\nVorher CO2:${r.finalEmulation.vorher.co2} O2:${r.finalEmulation.vorher.o2} Nachher CO2:${r.finalEmulation.nachher.co2.toFixed(1)} O2:${r.finalEmulation.nachher.o2.toFixed(1)}\n${r.esBlüht}\n${JSON.stringify(r.finalEmulation.system,null,2)}`; document.getElementById("b-home").classList.add("blüht"); document.getElementById("anker-bar").innerText+="\n🌸 BLÜHT DRINNE – self-contained – kein GitHub Fehler – Vertrag erfüllt"; };
+window.starteAlles=()=>{ const f=homeFunc(); document.getElementById("log-challenges").innerText="Beste Wette: "+JSON.stringify(f.ortResult.userResult.useResult.wette,null,2); document.getElementById("log-use").innerText=f.ortResult.userResult.useResult.lösung; document.getElementById("log-user").innerText=JSON.stringify(f.ortResult.userResult.userAction,null,2); document.getElementById("log-ort").innerText=JSON.stringify(f.ortResult.emulationAmOrt,null,2); document.getElementById("log-home").innerText=JSON.stringify(f.finalEmulation,null,2); document.getElementById("home-big").innerText=f.esBlüht+"\nANKER STABIL self-contained"; document.getElementById("log-lösung").innerText=`ALLES GESTARTET – self-contained – kein GitHub Fehler:\n${f.esBlüht}\nKeine Elben bauen aber emulieren – Room JS Pyramide drinne – ANKER innere Weisheit`; document.querySelectorAll(".block").forEach(b=>b.classList.add("blüht")); };
+</script>
+</body>
+</html>
